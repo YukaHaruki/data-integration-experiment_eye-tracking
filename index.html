@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>データ統合実験（Set1→Set2）</title>
+  <title>データ統合実験（eye-tracking）</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -266,11 +266,11 @@
             注意: このブラウザでは localStorage が利用できない可能性があります。少なくとも「Copy」を使って回答を控えてください。
           </div>
 
-          <label class="answer-label" for="smAnswer">SM:</label>
-          <textarea id="smAnswer" class="answer-input" placeholder="SMに対する回答を入力してください"></textarea>
+          <label class="answer-label" for="smAnswer">列の統合（SM）:</label>
+          <textarea id="smAnswer" class="answer-input" placeholder="列の統合（SM）に対する回答を入力してください"></textarea>
 
-          <label class="answer-label" for="erAnswer">ER:</label>
-          <textarea id="erAnswer" class="answer-input" placeholder="ERに対する回答を入力してください"></textarea>
+          <label class="answer-label" for="erAnswer">行の統合（ER）:</label>
+          <textarea id="erAnswer" class="answer-input" placeholder="行の統合（ER）に対する回答を入力してください"></textarea>
 
           <div class="action-row">
             <button id="submitAnswer" type="button">Submit (Save)</button>
@@ -507,14 +507,14 @@ B_SKU_Description, Product description in Table B (may merge item and pack detai
 B_Category, Product category in Table B (taxonomy may differ from Table A).
 B_QtyOrdered, Ordered quantity in Table B (often embedded in text).
 B_NetAmount, Net line amount in Table B (currency text may be included).</script>
-  <script type="text/plain" id="ds_set1_match">SM
+  <script type="text/plain" id="ds_set1_match">列の統合（SM）
 A_PO_Number, B_PO_Ref
 A_Outlet, B_StoreName
 A_Supplier, B_VendorName
 A_ItemName, B_SKU_Description
 A_Quantity, B_QtyOrdered
 
-ER
+行の統合（ER）
 A_4, B_7
 A_13, B_15
 A_26, B_22
@@ -741,14 +741,14 @@ B_Tag, Category tag in Table B (may be a phrase rather than a single label).
 B_TicketInfo, Admission information in Table B (may include symbols or words like 'Free').
 B_GeoCoord, Geographic coordinates in Table B (latitude and longitude).
 B_BestSeason, Recommended visiting season in Table B.</script>
-  <script type="text/plain" id="ds_set2_match">SM
+  <script type="text/plain" id="ds_set2_match">列の統合（SM）
 A_SpotName, B_PlaceTitle
 A_City, B_Municipality
 A_Region, B_RegionLabel
 A_Category, B_Tag
 A_AdmissionJPY, B_TicketInfo
 
-ER
+行の統合（ER）
 A_6, B_9
 A_18, B_12
 A_27, B_30
